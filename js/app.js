@@ -12,8 +12,10 @@ function ocultarIconoCorreo() {
 
         if (inpemail.value === "") {
             correo.style.display = "block";
+            inpemail.classList.remove("active");
         } else {
             correo.style.display = "none";
+            inpemail.classList.add("active");
         }
 
 
@@ -71,8 +73,10 @@ function ocultarSecurityPassword() {
 
         if (password.value === "") {
             candado.style.display = "block";
+            password.classList.remove("active");
         } else {
             candado.style.display = "none";
+            password.classList.add("active");
         }
 
     })

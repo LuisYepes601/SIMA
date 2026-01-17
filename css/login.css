@@ -37,7 +37,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    gap: 2rem;
+    gap: 3rem;
     border-radius: 10px;
 
 
@@ -83,15 +83,21 @@ body {
 
 }
 
+.inp-email.active {
+    padding: 1rem;
+}
+
 .inp-email:focus {
 
     outline-color: rgb(198, 195, 195);
 }
 
+<<<<<<< HEAD
 .inp-email::placeholder {
     
+=======
+>>>>>>> df22fb77ea93463b75e70295c5216d09f69a5906
 
-}
 
 .bi-envelope {
     position: absolute;
@@ -120,13 +126,18 @@ label {
     left: 20px;
 }
 
-#password {
-    padding: .8rem;
+.password {
+    padding: 1rem 3rem;
     width: 100%;
     font-size: 1rem;
-    padding: 1rem 3rem;
 
 }
+
+.password.active {
+    padding: 1rem;
+}
+
+
 
 .bi-eye,
 .bi-eye-slash-fill {
