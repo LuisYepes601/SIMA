@@ -130,8 +130,8 @@ label {
 }
 
 .password.active {
-    padding: 1rem;
-    background-color: aqua;
+    padding: 0;
+
 }
 
 .bi-eye,
