@@ -121,11 +121,13 @@ label {
     left: 20px;
 }
 
-#password {
-    padding: .8rem;
+.password{
+    padding: 1rem 3rem;
     width: 100%;
     font-size: 1rem;
 
+}.password.active{
+    padding: 1rem;
 }
 
 
