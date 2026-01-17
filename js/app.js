@@ -73,8 +73,10 @@ function ocultarSecurityPassword() {
 
         if (password.value === "") {
             candado.style.display = "block";
+            password.classList.remove("active");
         } else {
             candado.style.display = "none";
+            password.classList.add("active");
         }
 
     })

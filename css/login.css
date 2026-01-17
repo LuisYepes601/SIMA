@@ -81,7 +81,9 @@ body {
     background-color: var(--gray-ligth);
     font-size: 1rem;
 
-}.inp-email.active{
+}
+
+.inp-email.active {
     padding: 1rem;
 }
 
@@ -125,6 +127,8 @@ label {
     font-size: 1rem;
     padding: 1rem 3rem;
 
+}.password.active{
+    padding: 1rem;
 }
 
 .bi-eye,
