@@ -62,7 +62,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .credenciales-correo {
@@ -152,8 +152,9 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1.8rem;
     width: 100%;
+
 }
 
 .info {
@@ -171,6 +172,7 @@ i {
     display: flex;
     gap: .5rem;
     justify-content: center;
+    flex-direction: column;
 }
 
 .segurid-main input {
