@@ -125,14 +125,10 @@ label {
     padding: .8rem;
     width: 100%;
     font-size: 1rem;
-    padding: 1rem 3rem;
 
 }
 
-.password.active {
-    padding: 0;
 
-}
 
 .bi-eye,
 .bi-eye-slash-fill {
