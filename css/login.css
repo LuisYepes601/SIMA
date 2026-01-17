@@ -37,7 +37,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    gap: 2rem;
+    gap: 3rem;
     border-radius: 10px;
 
 
@@ -121,12 +121,14 @@ label {
     left: 20px;
 }
 
-.password{
+.password {
     padding: 1rem 3rem;
     width: 100%;
     font-size: 1rem;
 
-}.password.active{
+}
+
+.password.active {
     padding: 1rem;
 }
 
