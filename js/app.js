@@ -12,8 +12,10 @@ function ocultarIconoCorreo() {
 
         if (inpemail.value === "") {
             correo.style.display = "block";
+            inpemail.classList.remove("active");
         } else {
             correo.style.display = "none";
+            inpemail.classList.add("active");
         }
 
 

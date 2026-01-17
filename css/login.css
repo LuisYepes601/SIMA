@@ -81,6 +81,8 @@ body {
     background-color: var(--gray-ligth);
     font-size: 1rem;
 
+}.inp-email.active{
+    padding: 1rem;
 }
 
 .inp-email:focus {
