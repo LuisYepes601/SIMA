@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --gray-medium: #3f3f46;
+    --gray-ligth: #e8f0fe;
+    --roboto: Roboto;
+    --codigoSeguridad: Courier New;
+    --colorCardMain: white;
+}
+
+body {
+    min-height: 100dvh;
+    background-image: url(/assets/img/Documento.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    font-family: var(--roboto);
+
+}
+
+.login {
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 10px;
+
+
+}
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-header-img {
+    max-width: 90px;
+}
+
+.login-header-title {
+    font-size: clamp(1rem, 3vw, 1.6rem);
+}
+
+.login-credenciales {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.credenciales-correo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.inp-email {
+    width: 100%;
+    padding: .8rem;
+    border: solid 1px #e4e4e7;
+    padding: 1rem 3rem;
+    background-color: var(--gray-ligth);
+    font-size: 1rem;
+
+}
+
+.inp-email:focus {
+
+    outline-color: rgb(198, 195, 195);
+}
+
+.inp-email::placeholder {
+    padding: 2rem;
+
+}
+
+.bi-envelope {
+    position: absolute;
+    top: 60%;
+    left: 20px;
+    color: #545454;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #3f3f46;
+}
+
+.credencial-password {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.bi-lock {
+    position: absolute;
+    top: 60%;
+    left: 20px;
+}
+
+#password {
+    padding: .8rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+
+}
+
+.bi-eye,
+.bi-eye-slash-fill {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    cursor: pointer;
+
+}
+
+i {
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.seguridad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    width: 100%;
+    font-weight: 600;
+    color: #2f2f2f;
+    font-size: .9rem;
+}
+
+.segurid-main {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.segurid-main input {
+    padding: .8rem;
+    border-radius: 5px;
+    border: 1px solid rgb(159, 156, 156);
+    max-width: 120px;
+
+}
+
+.code {
+
+    background-color: #f3f3f3;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    letter-spacing: .3rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.code-inp {
+    font-family: var(--roboto);
+    font-size: 1rem;
+}
+
+.code-inp::placeholder {
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.segurid-main button {
+    padding: .9rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+}
+
+.ingreso {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ingreso button {
+    padding: .8rem;
+    width: 100%;
+    background-color: #3f3f46;
+    color: white;
+    font-family: var(--roboto);
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.huella {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+.huella-btn {
+    display: flex;
+    padding: .8rem;
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #b3b1b1;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.huella a {
+    color: #2f2f2f;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: var(--roboto);
+    font-size: .9rem;
+
+}
+
+.separador {
+    min-height: 1px;
+    background-color: #b3b1b1;
+    width: 100%;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer p {
+    font-size: .8rem;
+    opacity: 0.7;
+}
