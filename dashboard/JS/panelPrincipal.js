@@ -46,6 +46,8 @@ function btnRutasActive() {
 
         if (ariaSelecionada === "true") {
             btn.style.background = "gray";
+            btn.style.borderLeft = "3px solid white";
+
         }
 
 
@@ -55,6 +57,8 @@ function btnRutasActive() {
                 element.setAttribute("aria-selected", "false")
                 if (element.getAttribute("aria-selected") === "false") {
                     element.style.background = "transparent";
+                    element.style.borderLeft = "3px solid transparent";
+
                 }
             });
 
@@ -62,6 +66,7 @@ function btnRutasActive() {
 
             if (btn.getAttribute("aria-selected") === "true") {
                 btn.style.background = "gray";
+                btn.style.borderLeft = "3px solid white";
 
             }
         })
