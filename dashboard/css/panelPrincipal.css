@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--roboto);
+}
+
+:root {
+    --roboto: Roboto;
+}
+
+body {
+    min-height: 100dvh;
+    background-color: rgb(124, 157, 186);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px;
+    min-height: 100dvh;
+    position: relative;
+}
+
+.header {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.burguer {
+    padding: .5rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.aside {
+    grid-row: 1/5;
+    grid-column: 1/2;
+    position: fixed;
+    z-index: 1000;
+    top: calc(15% - 5px);
+    left: 0;
+    height: 86dvh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #112c60;
+    color: white;
+    overflow-y: scroll;
+    transform: translateX(-100%);
+    transition: transform .5s;
+    padding: 1rem;
+}
+
+.aside.active {
+    transform: translateX(0);
+    transition: transform .5s;
+}
+
+.aside-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.aside-nav-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid white;
+}
+
+
+
+img {
+    width: 100%;
+    max-width: 80px;
+}
+
+.rutas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    border-bottom: 1px solid white;
+    padding: 0 0 1rem 0;
+}
+
+.rutas button {
+    padding: .8rem;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid transparent;
+    display: flex;
+    gap: 1rem;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+.rutas-configuracion {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-bottom: 1rem;
+}
+
+.rutas-configuracion button {
+
+    display: flex;
+    background-color: antiquewhite;
+    padding: 1rem;
+
+}
+
+
+
+.main {
+    grid-row: 2/5;
+    grid-column: 1/6;
+    background-color: bisque;
+}
