@@ -52,6 +52,8 @@ function mostrarContraseña() {
 
 
 
+
+
 }
 
 mostrarContraseña();
@@ -84,3 +86,14 @@ function ocultarSecurityPassword() {
 }
 
 document.addEventListener("DOMContentLoaded", ocultarSecurityPassword);
+
+function enviarDashcboard() {
+
+    const btn_burguer = document.querySelector(".btn-entrar");
+
+    btn_burguer.addEventListener("click", () => {
+        window.location.href = "/dashboard/panelPrincipal.html";
+    })
+
+}
+enviarDashcboard();
