@@ -56,9 +56,9 @@ body {
     grid-column: 1/2;
     position: fixed;
     z-index: 1000;
-    top: calc(15% - 5px);
+    top: calc(12% - 5px);
     left: 0;
-    height: 86dvh;
+    height: 90dvh;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -146,7 +146,9 @@ img {
     transition: background-color .3s;
     border-radius: 5px;
 
-}.info-basic-user{
+}
+
+.info-basic-user {
 
     display: flex;
     flex-direction: column;
