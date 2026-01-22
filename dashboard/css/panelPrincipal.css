@@ -56,7 +56,7 @@ body {
     grid-column: 1/2;
     position: fixed;
     z-index: 1000;
-    top: calc(14.5% - 5px);
+    top:12%;
     left: 0;
     height: 90dvh;
     width: 300px;
