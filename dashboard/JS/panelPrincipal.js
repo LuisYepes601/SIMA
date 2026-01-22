@@ -47,6 +47,7 @@ function btnRutasActive() {
         if (ariaSelecionada === "true") {
             btn.style.background = "gray";
             btn.style.borderLeft = "3px solid white";
+            btn.style.borderRadiusTop = "50%";
 
         }
 
@@ -73,5 +74,20 @@ function btnRutasActive() {
     });
 
 } btnRutasActive();
+
+document.addEventListener("scroll", () => {
+
+    const header = document.querySelector(".header");
+
+    if (window.scrollY > 200) {
+        header.classList.add("active");
+        const boton = document.querySelector(".burguer");
+        boton.style.color = "white";
+    } else {
+        header.classList.remove("active");
+        boton.style.color = "black";
+    }
+})
+
 
 
