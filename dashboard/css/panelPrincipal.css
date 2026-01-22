@@ -56,9 +56,9 @@ body {
     grid-column: 1/2;
     position: fixed;
     z-index: 1000;
-    top:14.5%;
+    top: 14.5%;
     left: 0;
-    height: 88dvh;
+    height: 100dvh;
     width: 300px;
     display: flex;
     flex-direction: column;
